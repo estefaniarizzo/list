@@ -1,0 +1,6 @@
+<resources>
+    <color name="fondoPersonalizado">#F5F5DC</color>
+    <color name="primaryText">#333366</color>
+    <color name="accent">#FF9800</color>
+    <color name="itemBackground">#FFF8E1</color>
+</resources>
