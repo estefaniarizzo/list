@@ -10,26 +10,39 @@
         android:hint="Título"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/primaryText"/>
+        android:textColor="@color/primaryText"
+        android:textSize="18sp"
+        android:backgroundTint="@color/accent"
+        android:layout_marginBottom="12dp"/>
 
     <EditText
         android:id="@+id/etDescription"
         android:hint="Descripción"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/primaryText"/>
+        android:textColor="@color/primaryText"
+        android:textSize="16sp"
+        android:backgroundTint="@color/accent"
+        android:layout_marginBottom="12dp"/>
 
     <EditText
         android:id="@+id/etCategory"
         android:hint="Categoría"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/primaryText"/>
+        android:textColor="@color/primaryText"
+        android:textSize="16sp"
+        android:backgroundTint="@color/accent"
+        android:layout_marginBottom="16dp"/>
 
     <Button
         android:id="@+id/btnSave"
         android:text="Guardar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        android:textAllCaps="false"
+        android:textColor="@color/primaryText"
+        android:backgroundTint="@color/accent"
+        android:textSize="18sp"/>
 </LinearLayout>

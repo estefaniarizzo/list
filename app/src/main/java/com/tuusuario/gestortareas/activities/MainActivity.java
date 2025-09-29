@@ -12,6 +12,9 @@ import java.util.List;
 import androidx.room.Room;
 import android.widget.Button;
 
+import android.util.Log;
+import android.widget.Toast;
+
 public class MainActivity extends AppCompatActivity {
     private AppDatabase db;
     private TaskAdapter adapter;
@@ -41,5 +44,30 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         adapter.setTasks(db.taskDao().getAllTasks());
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d("CICLO", "onStart MainActivity");
+        Toast.makeText(this, "onStart MainActivity", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d("CICLO", "onPause MainActivity");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d("CICLO", "onStop MainActivity");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d("CICLO", "onDestroy MainActivity");
     }
 }

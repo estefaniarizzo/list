@@ -7,11 +7,13 @@
 
     <TextView
         android:id="@+id/tvTitle"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:textColor="@color/primaryText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Título"/>
+        android:text="Título"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"/>
 
     <TextView
         android:id="@+id/tvCategory"
@@ -19,7 +21,9 @@
         android:layout_height="wrap_content"
         android:text="Categoría"
         android:layout_below="@id/tvTitle"
-        android:textColor="@color/primaryText"/>
+        android:textColor="@color/primaryText"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"/>
 
     <Button
         android:id="@+id/btnDelete"
@@ -27,5 +31,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_centerVertical="true"/>
+        android:layout_centerVertical="true"
+        android:backgroundTint="@color/accent"
+        android:textColor="@color/primaryText"
+        android:layout_marginBottom="4dp"/>
+
+    <Button
+        android:id="@+id/btnShare"
+        android:text="Compartir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDelete"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/accent"
+        android:textColor="@color/primaryText"/>
 </RelativeLayout>
